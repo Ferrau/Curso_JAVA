@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerarquia o Especificidad en CSS</title>
+    <!-- 
+        La especificidad hace referencia a la relevancia que tiene un estilo 
+        sobre un elemento de la página al cual le están afectando varios estilos 
+        de CSS al mismo tiempo. Es decir, hace referencia al grado de importancia 
+        de un estilo sobre otro. 
+
+        Orden de importancia:
+        !important
+        Estilos inline 
+        ID
+        Clases y pseudoclases 
+        Etiquetas y pseudoelementos
+        
+        
+
+    -->
+    <style>
+        /* va a sobreescribir a todos */
+        /* p 
+       {color: khaki!important;} */
+       
+        /* va a sobreescribir solo a las clases pseudoclases y etiquetas */
+        #parrafo 
+        {
+            color:blue; 
+        }
+        /* va a sobreescribir solo a las etiquetas y pseudoelementos */
+        .parrafo
+        {      
+            color: green;  
+        }
+        
+        p 
+        { 
+            color:orange; 
+        } 
+
+    </style>
+</head>
+<body>
+    <p id="parrafo" class="parrafo" style="color:pink">
+		<!-- va a sobreescribir a todos excepto al !important -->
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, ipsa dolorum maiores veniam quas, suscipit quibusdam nostrum
+		sapiente vero libero ratione mollitia nihil totam laborum sint eos, eaque qui est?
+	</p>
+</body>
+</html>
