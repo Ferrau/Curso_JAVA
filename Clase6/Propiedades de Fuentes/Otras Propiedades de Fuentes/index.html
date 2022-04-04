@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Otras Propiedades de Fuente</title>
+    <style>
+        #p1 {
+            /* 
+                si el sistema operativo no encuentra la 1er fuente, va por la 
+                2da y asi sucesivamente.
+                sans-serif: letras sin palito o terminacion o remate(es opcional) 
+            */
+            /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif; */
+            font-family: 'Courier New', Courier, monospace;
+            /* font-family: Verdana; */
+          
+            
+        }
+
+        #p2 {
+            /*
+                Pone en negrita el texto.
+                Posibles valores:   bold
+                                    normal
+                                    bolder
+                                    lighter
+                                    100 200 300 400 500 600 700 800 900
+            */
+            font-weight: bolder;
+        }
+
+        #p3 {
+            /* 
+                Esta propiedad me permite cambiar el estilo de una tipografía a
+                 italica por ejemplo los valores posibles son:
+                        normal
+                        italic
+                        oblique 
+            */
+            font-style: normal;
+
+        }
+
+        #p4 {
+            /* Hace referencia al tamaño de la tipografía:
+            
+            medidas relativas: escalan mejor en tablets, celulares y monitores
+            rem (tamaño de la fuente respecto al elemento raíz del documento)
+            em (altura de la fuente por defecto)
+            % (porcentaje)
+
+            medidas absolutas: estan en desuso. Solo de uso didactico
+            px (pixeles)
+            ex (altura de la letra x minúscula) 
+            in (pulgadas) 
+            cm (centímetros) 
+            mm (milímetros) 
+            pt (puntos, 1 punto es lo mismo que 1/72 pulgadas) 
+            pc (picas, 1 pc es lo mismo que 12 puntos)  
+            
+            1 em = 12 pt = 16 px = 100 % 
+            1 rem = 16 px (valor por defecto en windows)
+            
+            */
+
+
+            /* font-size: 1rem; */
+            font-size: 1rem;
+        }
+
+        #p5 {
+            /* 
+            Es la propiedad que hace referencia al interlineado, los valores
+            posibles son:
+            1)normal:Predeterminado. Establece un espacio entre líneas razonable.
+            2) Si el valor es un número, la altura de línea se calcula multiplicando el 
+            tamaño de fuente del elemento por el número. 
+            3) Porcentaje -> son relativos al tamaño de fuente del elemento. 
+            */
+            /* line-height: normal; */
+            /* line-height: 2rem; */
+            line-height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id="p1">Esta es una prueba de la propiedad
+        font-family</p>
+    <hr>
+    <p id="p2">Esta es una prueba de la propiedad
+        font-weight</p>
+    <hr>
+    <p id="p3">Esta es una prueba de la propiedad font-style
+    </p>
+    <hr>
+    <p id="p4">Esta es una prueba de la propiedad font-size
+    </p>
+    <hr>
+    <p id="p5">Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Porro ab corporis ipsum! Magni
+        consequuntur nobis error eius at suscipit ab!
+        Doloremque, consequuntur excepturi aperiam facere
+        eius perspiciatis nesciunt aut. Ea?Lorem ipsum dolor sit 
+        amet consectetur adipisicing elit. Porro ab corporis ipsum! Magni
+        consequuntur nobis error eius at suscipit ab!
+        Doloremque, consequuntur excepturi aperiam facere
+        eius perspiciatis nesciunt aut. Ea?Lorem ipsum dolor sit amet 
+        consectetur adipisicing elit. Porro ab corporis ipsum! Magni
+        consequuntur nobis error eius at suscipit ab!
+        Doloremque, consequuntur excepturi aperiam facere
+        eius perspiciatis nesciunt aut. Ea?</p>
+
+</body>
+
+</html>

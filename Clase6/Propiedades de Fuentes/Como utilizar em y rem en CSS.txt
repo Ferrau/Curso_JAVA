@@ -1,0 +1,8 @@
+Como utilizar em y rem en CSS
+https://cybmeta.com/em-y-rem
+
+Ejemplo práctico de px, rem, em i %
+https://blog.interactius.com/ejemplo-pr%C3%A1ctico-de-px-rem-em-i-b23262e02020
+
+Unidades de medida (px, rem, em, cm, mm etc.)
+https://www.tutorialesprogramacionya.com/cssya/simulador/simulador.php?inicio=30&cod=35&punto=31

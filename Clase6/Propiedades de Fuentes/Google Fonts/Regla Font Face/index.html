@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regla Font Face</title>
+</head>
+<!-- 
+    1) Voy a la pagina de google fonts
+    2) Elijo la fuente que me gusta
+    3) Hago clic en descargar familia(download family) en el directorio
+     donde tengo el archivo html.
+    4) agrego la regla @font-face para agregar una fuente personalizada
+        -> el valor de font family es arbitrario
+        -> src indica la ruta donde esta el archivo descargado .ttf 
+    5) aplico mediante algun selector la regla al elemento html teniendo en cuenta
+    que los valores de font-family deben coincidir
+-->
+<style>
+    @font-face 
+    {
+       font-family: 'nombrecualquiera';
+       src: url(RockSalt-Regular.ttf); 
+       color: aquamarine;
+    }
+
+    h1
+    {
+        font-family: 'nombrecualquiera', cursive;
+        color: aquamarine;
+    }
+
+</style>
+<body>
+    <h1>Este es un titulo muy original</h1>
+</body>
+</html>
